@@ -17,7 +17,7 @@ public static class BuildExtension
            builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
 
         Configuration.FrontendUrl =
-           builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
+           builder.Configuration.GetValue<string>("FrontendUrl") ?? string.Empty;
     }
 
     public static void AddDocumentation(this WebApplicationBuilder builder)

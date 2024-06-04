@@ -18,7 +18,7 @@ public class Response<TData>
 
     public TData? Data { get; set; } // Não sabemos o tipo de dados, pode ser qualquer um
 
-    private string? Message { get; set; }
+    public string? Message { get; set; }
 
     [JsonIgnore]
     public bool IsSuccess => _code >= 200 && _code <= 299;
